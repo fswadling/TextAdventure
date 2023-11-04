@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    
+    <Compile Include="Utilities.fs" />
+	<Compile Include="StoryShared.fs" />
+	<Compile Include="LaraStory.fs" />
+	<Compile Include="KaiStory.fs" />
+	<Compile Include="AriaStory.fs" />
+    <Compile Include="Story.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Json" Version="0.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\OrchestrationCE.fsproj" />
+  </ItemGroup>
+
+</Project>
